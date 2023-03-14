@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  background-image: url(roze.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 10px;
+  font-size: 18px;
+  color: white;
+}
+p {
+  color: rgb(99, 54, 76);
+  font-size: 22px;
+}
+img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding: 2px;
+}
+.razmak {
+  padding: 5px 0;
+}
+
+input {
+  padding: 3px;
+  margin: 2px;
+  border-radius: 8px;
+  border: none;
+  vertical-align: middle;
+}
+
+button {
+  width: 100px;
+  background-color: rgb(165, 90, 125);
+  color: white;
+  height: 40px;
+  font-size: 15px;
+  border-radius: 10px;
+  border: none;
+}
+#pargrafSaManjimFontom {
+  font-size: 17px;
+}
+.cvece,
+.pokloni,
+.placanje,
+.dugmad,
+.porudzbina {
+  padding: 10px;
+  margin-left: 150px;
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cvećara</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="cvece">
+      <p class="razmak">Odaberite cveće:</p>
+      <div>
+        <input
+          type="number"
+          min="0"
+          name="ruze"
+          id="ruze"
+          placeholder="Cena po cvetu je 150 din."
+          oninput="validity.valid||(value='');"
+        />
+        <label for="ruze"><b>Ruže</b></label>
+      </div>
+      <div>
+        <input
+          type="number"
+          min="0"
+          name="ljiljani"
+          id="ljiljani"
+          placeholder="Cena po cvetu je 120 din."
+          oninput="validity.valid||(value='');"
+        />
+        <label for="ljiljani"><b>Ljiljani</b></label>
+      </div>
+      <div>
+        <input
+          type="number"
+          min="0"
+          name="gerberi"
+          id="gerberi"
+          placeholder="Cena po cvetu je 70 din."
+          oninput="validity.valid||(value='');"
+        />
+        <label for="gerberi"><b>Gerberi</b></label>
+      </div>
+    </div>
+    <div class="pokloni">
+      <p class="razmak">Dodatni pokloni:</p>
+      <div>
+        <input
+          type="checkbox"
+          name="poklon"
+          id="bombonjera"
+          value="bombonjera"
+        />
+        <label for="poklon"><b>Bombonjera</b></label>
+      </div>
+      <div>
+        <input type="checkbox" name="poklon" id="čokolada" value="čokolada" />
+        <label for="poklon"><b>Čokolada</b></label>
+      </div>
+      <div>
+        <input type="checkbox" name="poklon" id="šampanjac" value="šampanjac" />
+        <label for="poklon"><b>Šampanjac</b></label>
+      </div>
+    </div>
+    <div class="placanje">
+      <p class="razmak">Plaćanje:</p>
+      <div>
+        <input type="radio" name="placanje" id="kes" value="kes" checked />
+        <label for="placanje"><b>Keš</b></label>
+      </div>
+      <div>
+        <input type="radio" name="placanje" id="kartica" value="kartica" />
+        <label for="placanje"><b>Kartica</b></label>
+      </div>
+    </div>
+    <div class="dugmad">
+      <button type="submit" id="izracunajDugme">Izračunaj</button>
+      <button type="reset" id="resetujDugme">Resetuj</button>
+    </div>
+    <div class="porudzbina">
+      <p class="razmak">Vaša porudžbina:</p>
+      <div id="slikeRuza"></div>
+      <div id="slikeLjiljana"></div>
+      <div id="slikeGerbera"></div>
+      <div id="divBombonjera"></div>
+      <div id="divCokolada"></div>
+      <div id="divSampanjac"></div>
+      <p id="pargrafSaManjimFontom">
+        Cena bez popusta je: <span id="bezPopusta"></span>
+      </p>
+      <p class="razmak">Cena sa popustom je: <span id="saPopustom"></span></p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
